@@ -1,7 +1,7 @@
 <template>
   <div class="relative isolate overflow-hidden bg-gray-900">
     <svg
-      class="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+      class="absolute inset-0 -z-10 size-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
       aria-hidden="true"
     >
       <defs>
@@ -86,7 +86,7 @@
             >
               <span>Just shipped v1.0</span>
               <ChevronRightIcon
-                class="h-5 w-5 text-gray-500"
+                class="size-5 text-gray-500"
                 aria-hidden="true"
               />
             </span>

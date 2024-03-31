@@ -1,8 +1,8 @@
 <template>
   <div>
-    <UCard class="max-w-screen-md mx-auto">
+    <UCard class="mx-auto max-w-screen-md">
       <template #header>
-        <h1 class="font-bold text-green-600 text-lg">
+        <h1 class="text-lg font-bold text-green-600">
           This is the card title
         </h1>
       </template>
@@ -18,7 +18,7 @@
       </p>
 
       <template #footer>
-        <h2 class="text-sm text-green-800 font-semibold">
+        <h2 class="text-sm font-semibold text-green-800">
           This is the card footer
         </h2>
       </template>

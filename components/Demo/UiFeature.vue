@@ -30,7 +30,7 @@
             >
               <component
                 :is="feature.icon"
-                class="h-5 w-5 flex-none text-indigo-600"
+                class="size-5 flex-none text-indigo-600"
                 aria-hidden="true"
               />
               {{ feature.name }}

@@ -1,7 +1,7 @@
 <template>
   <div class="relative isolate overflow-hidden bg-white">
     <svg
-      class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+      class="absolute inset-0 -z-10 size-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
       aria-hidden="true"
     >
       <defs>
@@ -36,7 +36,7 @@
           class="h-11"
           src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600"
           alt="Your Company"
-        >
+        />
         <div class="mt-24 sm:mt-32 lg:mt-16">
           <a
             href="#"
@@ -50,7 +50,7 @@
             >
               <span>Just shipped v1.0</span>
               <ChevronRightIcon
-                class="h-5 w-5 text-gray-400"
+                class="size-5 text-gray-400"
                 aria-hidden="true"
               />
             </span>
