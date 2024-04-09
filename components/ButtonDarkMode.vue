@@ -1,36 +1,28 @@
 <template>
-  <div class="flex flex-row items-center justify-center">
-    <Icon
-      v-show="colorMode.preference === 'light'"
-      name="bx:sun"
-      class="theme-icon text-typography_primary_light dark:text-typography_primary_dark"
-      width="28"
-      height="28"
-      @click="toggleTheme"
-    />
-    <Icon
-      v-show="colorMode.preference === 'dark'"
-      name="bx:bxs-sun"
-      class="theme-icon text-typography_primary_light dark:text-typography_primary_dark"
-      width="28"
-      height="28"
-      @click="toggleTheme"
-    />
-  </div>
+  <ClientOnly>
+    <div class="flex flex-row items-center justify-center py-1">
+      <UButton
+        :icon="isDark ? 'i-heroicons-sun' : 'i-heroicons-sun-20-solid'"
+        color="gray"
+        variant="ghost"
+        aria-label="Theme"
+        @click="isDark = !isDark"
+      />
+    </div>
+    <template #fallback>
+      <div class="size-8" />
+    </template>
+  </ClientOnly>
 </template>
 
 <script setup>
 const colorMode = useColorMode()
-const toggleTheme = () => {
-  colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark'
-}
+const isDark = computed({
+  get() {
+    return colorMode.value === 'dark'
+  },
+  set() {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+  },
+})
 </script>
-
-<style scoped>
-.theme-icon {
-  @apply w-7 h-7 cursor-pointer transition-transform duration-100;
-}
-.theme-icon:hover {
-  @apply scale-125;
-}
-</style>
