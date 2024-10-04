@@ -14,7 +14,7 @@
         <div class="space-y-8">
           <img
             class="h-7"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
             alt="Company name"
           >
           <p class="text-sm leading-6 text-gray-600">

@@ -34,7 +34,7 @@
       >
         <img
           class="h-11"
-          src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600"
+          src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&amp;shade=600"
           alt="Your Company"
         />
         <div class="mt-24 sm:mt-32 lg:mt-16">
@@ -85,7 +85,7 @@
             class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"
           >
             <img
-              src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
+              src="https://tailwindui.com/plus/img/component-images/project-app-screenshot.png"
               alt="App screenshot"
               width="2432"
               height="1442"
